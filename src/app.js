@@ -13,7 +13,7 @@ console.log(process.env.CORS_ORIGIN);
 //middleware
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: ['http://localhost:5173', 'https://wexafrontend.vercel.app'],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
